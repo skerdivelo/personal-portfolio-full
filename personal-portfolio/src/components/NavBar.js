@@ -90,7 +90,10 @@ export const NavBar = () => {
                                 >
                                     <img src={usaFlag} alt="" />
                                 </button>
-                                <button className="italyFlag" onClick={() => changeLanguage("it")}>
+                                <button
+                                    className="italyFlag"
+                                    onClick={() => changeLanguage("it")}
+                                >
                                     <img src={italyFlag} alt="" />
                                 </button>
                                 <button onClick={() => changeLanguage("sq")}>
