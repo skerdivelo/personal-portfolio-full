@@ -412,6 +412,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 56%;
 }
 
+.project-card {
+    cursor: pointer;
+}
+
 .project .nav.nav-pills {
     width: 72%;
     margin: 0 auto;
