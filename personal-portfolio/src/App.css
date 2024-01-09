@@ -355,13 +355,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
     padding: 0 0 50px 0;
     position: relative;
+    margin-top: 40px;
 }
 .skill-bx {
     background: #151515;
     border-radius: 64px;
     text-align: center;
     padding: 60px 50px;
-    margin-top: -60px;
+    margin-top: 0px;
 }
 .skill h2 {
     font-size: 45px;
