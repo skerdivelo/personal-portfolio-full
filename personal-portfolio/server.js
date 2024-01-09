@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+const xss = require("xss");
 
 // server used to send send emails
 const app = express();
@@ -16,7 +17,7 @@ const contactEmail = nodemailer.createTransport({
     service: "gmail",
     auth: {
         user: "skerdivelo42@gmail.com",
-        pass: "Nonseisimpatica",
+        pass: "igrl bmmg rnco tvzc",
     },
 });
 
@@ -29,10 +30,10 @@ contactEmail.verify((error) => {
 });
 
 router.post("/contact", (req, res) => {
-    const name = req.body.firstName + req.body.lastName;
-    const email = req.body.email;
-    const message = req.body.message;
-    const phone = req.body.phone;
+    const name = xss(req.body.firstName + req.body.lastName);
+    const email = xss(req.body.email);
+    const message = xss(req.body.message);
+    const phone = xss(req.body.phone);
     const mail = {
         from: name,
         to: "sussybakaremove@gmail.com",
