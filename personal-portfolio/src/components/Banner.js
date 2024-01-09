@@ -38,7 +38,7 @@ const translations = {
             "Mobile Developer",
             "Cyber Security Enthusiast",
         ],
-        about: "Jam një djalë 19-vjeçar nga Shqipëria, që jeton në Itali. Kam qenë i apasionuar pas kompjuterëve që kur isha fëmijë dhe gjithmonë kam dashur të mësoja të programoj. Aktualisht po studioj Informatikë në Itis Castelli në Brescia, Itali. Gjithashtu kam përfunduar një kurs 4-mujor në Siguri Kibernetike në Universitetin e Brescias. Kam shumë pasion për programimin dhe Sigurinë Kibernetike, dhe gjithmonë jam në kërkim të gjërave të reja për t'u mësuar.",
+        about: "Jam një djalë 19-vjeçar nga Shqipëria, që jeton në Itali. Kam qenë i apasionuar pas kompjuterëve që kur isha fëmijë dhe gjithmonë kam dashur të mësoja të programoj. Aktualisht po studioj Informatikë në Itis Castelli në Brescia, Itali. Gjithashtu kam përfunduar një kurs 4-mujor në Siguri Kibernetike në Universitetin e Brescias. Kam shumë pasion për programimin dhe Sigurinë Kibernetike, dhe gjithmonë jam në kërkim të mësoj gjëra të reja për t'u mësuar.",
         connect: "Le të Lidhemi",
     },
 };
