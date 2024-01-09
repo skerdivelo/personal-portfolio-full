@@ -1,3 +1,4 @@
+import React, { useContext } from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
@@ -6,6 +7,22 @@ import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { LanguageContext } from "./LanguageContext";
+
+const projectsTranslations = {
+  en : {
+    title: 'Projects',
+    description: 'I have completed these projects in my free time to learn new technologies and improve my programming skills.',
+  },
+  it : {
+    title: 'Progetti',
+    description: 'Ho completato questi progetti nel mio tempo libero per imparare nuove tecnologie e migliorare le mie competenze di programmazione.',
+  },
+  sq : {
+    title: 'Projekte',
+    description: 'Kam kryer këto projekte në kohën e lirë për të mësuar teknologji të reja dhe për të përmirësuar shkathtësitë e mia të programimit.',
+  }
+}
 
 export const Projects = () => {
 
@@ -43,6 +60,11 @@ export const Projects = () => {
     },
   ];
 
+  const languageContext = useContext(LanguageContext);
+  const { language } = languageContext;
+
+  const translations = projectsTranslations[language];
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -51,8 +73,8 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Ho realizzato questi progetti nel mio tempo libero per imparare nuove tecnologie e migliorare le mie competenze di programmazione.</p>
+                <h2>{translations.title}</h2>
+                <p>{translations.description}</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
